@@ -53,7 +53,69 @@
         }
     }
 }
-@include media(phone){
+@include media(phone-big){
+    .banner-content{
+        display: block !important; 
+        .banner-left,.banner-right,.banner-middle{
+            width: 100% !important;
+        }
+        .input1{
+            top: 19.2% !important;
+            left: 87% !important;
+        }
+        .input2{
+            top: 30.7% !important;
+            left: 87% !important;
+        }
+        .input3{
+            left: 7.9% !important;
+            top: 42% !important;
+        }
+        .container{
+            padding-left: 9% !important;
+        }
+        .checkbox{
+            width: 95% !important;
+            padding-top: 2% !important;
+        }
+    }
+    }
+    @include media(phone-medium){
+        .header-content{
+            width: 90% !important;
+        }
+        .banner-content{
+            display: block !important; 
+            .banner-left,.banner-right,.banner-middle{
+                width: 100% !important;
+            }
+            .input1{
+                top: 17.7% !important;
+                left: 87% !important;
+            }
+            .input2{
+                top: 28% !important;
+                left: 87% !important;
+            }
+            .input3{
+                left: 7.9% !important;
+                top: 38.5% !important;
+            }
+            .container{
+                padding-left: 9% !important;
+            }
+            .checkbox{
+                width: 95% !important;
+                padding-top: 2% !important;
+            }
+        }
+    }
+@include media(phone-small){
+    .header-btn{
+        width: 97% !important;
+        font-size: 0.6em !important;
+        padding: 5% !important;
+    }
     .banner-left{
         height: 380px !important;
     }
@@ -77,16 +139,16 @@
             width: 100% !important;
         }
         .input1{
-            top: 23% !important;
+            top: 18% !important;
             left: 87% !important;
         }
         .input2{
-            top: 33.7% !important;
+            top: 29.7% !important;
             left: 87% !important;
         }
         .input3{
             left: 7.9% !important;
-            top: 43% !important;
+            top: 40.5% !important;
         }
         .container{
             padding-left: 9% !important;
@@ -97,6 +159,8 @@
         }
     }
 }
+
+
 @mixin banner-icon(){
     left: 16.6%;
     color: #807575;

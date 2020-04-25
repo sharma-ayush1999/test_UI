@@ -39,9 +39,21 @@ a,li{
         left: 89% !important;
     }
 }
-@include media(phone){
+@include media(phone-big){
     .main-icon{
         left: 80% !important;
+    }
+}
+@include media(phone-medium){
+    .main-icon{
+        left: 83% !important;
+        font-size: 3em !important;
+    }
+}
+@include media(phone-small){
+    .main-icon{
+        left: 83% !important;
+        font-size: 3em !important;
     }
 }
 .main-icon{

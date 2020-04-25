@@ -6095,19 +6095,6 @@ readers do not read off random characters that represent icons */
   background-color: #364b64;
 }
 
-@media (max-width: 500px) {
-  .header-content {
-    width: 86% !important;
-    padding: 5% !important;
-  }
-  .header-content .header-btn {
-    width: 109% !important;
-  }
-  .header-content .header-btn button {
-    padding: 8% !important;
-  }
-}
-
 .header {
   background-color: #2a394b;
   position: -webkit-sticky;
@@ -6208,6 +6195,70 @@ readers do not read off random characters that represent icons */
 }
 
 @media (max-width: 500px) {
+  .banner-content {
+    display: block !important;
+  }
+  .banner-content .banner-left, .banner-content .banner-right, .banner-content .banner-middle {
+    width: 100% !important;
+  }
+  .banner-content .input1 {
+    top: 19.2% !important;
+    left: 87% !important;
+  }
+  .banner-content .input2 {
+    top: 30.7% !important;
+    left: 87% !important;
+  }
+  .banner-content .input3 {
+    left: 7.9% !important;
+    top: 42% !important;
+  }
+  .banner-content .container {
+    padding-left: 9% !important;
+  }
+  .banner-content .checkbox {
+    width: 95% !important;
+    padding-top: 2% !important;
+  }
+}
+
+@media (max-width: 415px) {
+  .header-content {
+    width: 90% !important;
+  }
+  .banner-content {
+    display: block !important;
+  }
+  .banner-content .banner-left, .banner-content .banner-right, .banner-content .banner-middle {
+    width: 100% !important;
+  }
+  .banner-content .input1 {
+    top: 17.7% !important;
+    left: 87% !important;
+  }
+  .banner-content .input2 {
+    top: 28% !important;
+    left: 87% !important;
+  }
+  .banner-content .input3 {
+    left: 7.9% !important;
+    top: 38.5% !important;
+  }
+  .banner-content .container {
+    padding-left: 9% !important;
+  }
+  .banner-content .checkbox {
+    width: 95% !important;
+    padding-top: 2% !important;
+  }
+}
+
+@media (max-width: 376px) {
+  .header-btn {
+    width: 97% !important;
+    font-size: 0.6em !important;
+    padding: 5% !important;
+  }
   .banner-left {
     height: 380px !important;
   }
@@ -6232,16 +6283,16 @@ readers do not read off random characters that represent icons */
     width: 100% !important;
   }
   .banner-content .input1 {
-    top: 23% !important;
+    top: 18% !important;
     left: 87% !important;
   }
   .banner-content .input2 {
-    top: 33.7% !important;
+    top: 29.7% !important;
     left: 87% !important;
   }
   .banner-content .input3 {
     left: 7.9% !important;
-    top: 43% !important;
+    top: 40.5% !important;
   }
   .banner-content .container {
     padding-left: 9% !important;
@@ -6533,6 +6584,20 @@ a, li {
 @media (max-width: 500px) {
   .main-icon {
     left: 80% !important;
+  }
+}
+
+@media (max-width: 415px) {
+  .main-icon {
+    left: 83% !important;
+    font-size: 3em !important;
+  }
+}
+
+@media (max-width: 376px) {
+  .main-icon {
+    left: 83% !important;
+    font-size: 3em !important;
   }
 }
 
