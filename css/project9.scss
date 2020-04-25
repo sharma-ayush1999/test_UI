@@ -4,6 +4,7 @@
 @import "brands";
 @import "btn";
 @import "font-family";
+@import "mediaquery";
 @import "header";
 @import "banner";
 
@@ -28,9 +29,9 @@ a,li{
 .flex{
     display: flex;
 }
-.relative{
+.rel{
     position: relative;
 }
-.absolute{
+.abs{
     position: absolute;
 }

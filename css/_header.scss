@@ -1,12 +1,24 @@
+@include media(phone){
+    .header-content{
+        width: 86% !important;
+        padding: 5% !important;
+        .header-btn{
+            width: 109% !important;
+            button{
+                padding: 7% !important;
+            }
+        }
+    }
+}
 .header{
     background-color: #2a394b;
     position: sticky;
     top: 0;
     .header-content{
-        width: 98%;
+        width: 97%;
         margin: 0px auto;
         justify-content: space-between;
-        padding: 1em;
+        padding: 1%;
         .header-left{
             h1{
                 color: #fff;
@@ -14,12 +26,12 @@
             }
         }
         .header-right{
-            width: 9%;
             .header-btn{
+                width: 106%;
                 justify-content: space-between;
                 button{
                     font-size: 0.8em;
-                    padding: 0.6em;
+                    padding: 6%;
                     letter-spacing: 0px;
                     color: #658de7;
                     transition: all 0.6s ease-in-out;
@@ -27,9 +39,6 @@
                 }
                 button:hover{
                     background-color: #4b5d72;
-                }
-                button:nth-of-type(){
-                    width: 24%;
                 }
             }
         }
