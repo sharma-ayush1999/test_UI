@@ -1,0 +1,38 @@
+.header{
+    background-color: #2a394b;
+    position: sticky;
+    top: 0;
+    .header-content{
+        width: 98%;
+        margin: 0px auto;
+        justify-content: space-between;
+        padding: 1em;
+        .header-left{
+            h1{
+                color: #fff;
+                font-size: 1.3em;
+            }
+        }
+        .header-right{
+            width: 9%;
+            .header-btn{
+                justify-content: space-between;
+                button{
+                    font-size: 0.8em;
+                    padding: 0.6em;
+                    letter-spacing: 0px;
+                    color: #658de7;
+                    transition: all 0.6s ease-in-out;
+                    font-weight: 700;
+                }
+                button:hover{
+                    background-color: #4b5d72;
+                }
+                button:nth-of-type(){
+                    width: 24%;
+                }
+            }
+        }
+    }
+
+}
