@@ -9,7 +9,6 @@
 @import "banner";
 
 
-
 *{
     margin: 0px;
     padding: 0px;
@@ -34,4 +33,25 @@ a,li{
 }
 .abs{
     position: absolute;
+}
+@include media(tablet-portrait){
+    .main-icon{
+        left: 89% !important;
+    }
+}
+@include media(phone){
+    .main-icon{
+        left: 80% !important;
+    }
+}
+.main-icon{
+    position: fixed;
+    top: 90%;
+    left: 74%;
+    font-size: 4em;
+    color: red;
+    transition: all 0.5s ease-in-out;
+}
+.main-icon:hover{
+    color: rgb(37, 255, 37);
 }

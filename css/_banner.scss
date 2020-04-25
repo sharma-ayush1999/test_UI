@@ -1,20 +1,48 @@
 @include media(tablet-portrait){
+    .banner-left{
+        height: 452px !important;
+    }
+    .banner-middle{
+        height: 450px !important;
+    }
+    .banner-right{
+        height: 173px !important;
+    }
+    .banner-right--content{
+        padding: 4% !important;
+        .reimburse{
+            padding-bottom: 2% !important;
+            width: 16% !important;
+        }
+    }
+    .banner-left--content{
+        padding: 4% !important;
+        .input{
+            padding-top: 3% !important;
+        }
+        .filters{
+            padding-bottom: 2% !important;
+        }
+        .status{
+            padding-top: 4% !important;
+        }
+    }
     .banner-content{
         display: block !important; 
         .banner-left,.banner-right,.banner-middle{
             width: 100% !important;
         }
         .input1{
-            top: 24.7% !important;
-            left: 88% !important;
+            top: 17% !important;
+            left: 92% !important;
         }
         .input2{
-            top: 37% !important;
-            left: 88% !important;
+            top: 26% !important;
+            left: 92% !important;
         }
         .input3{
-            left: 10% !important;
-            top: 48.9% !important;
+            left: 6% !important;
+            top: 34.5% !important;
         }
         .container{
             padding-left: 9% !important;
@@ -26,34 +54,51 @@
     }
 }
 @include media(phone){
+    .banner-left{
+        height: 380px !important;
+    }
+    .banner-right{
+        background-color: #dfdfdf !important;
+        height: 100px !important;
+        .reimburse{
+            width: 43% !important;
+        }
+        .banner-right--content{
+            padding: 5% !important;
+            padding-left: 8% !important;
+        }
+    }
+    .banner-middle{
+        height: 450px;
+    }
     .banner-content{
         display: block !important; 
         .banner-left,.banner-right,.banner-middle{
             width: 100% !important;
         }
         .input1{
-            top: 24.3% !important;
-            left: 84% !important;
+            top: 19.6% !important;
+            left: 87% !important;
         }
         .input2{
-            top: 35.7% !important;
-            left: 84% !important;
+            top: 28.7% !important;
+            left: 87% !important;
         }
         .input3{
-            left: 10% !important;
-            top: 46.7% !important;
+            left: 7% !important;
+            top: 37.7% !important;
         }
         .container{
-            padding-left: 14% !important;
+            padding-left: 9% !important;
         }
         .checkbox{
-            width: 59% !important;
-            padding-top: 0% !important;
+            width: 95% !important;
+            padding-top: 2% !important;
         }
     }
 }
 @mixin banner-icon(){
-    left: 16%;
+    left: 16.6%;
     color: #807575;
     font-size: 1em;
     font-size: 1.2em;
@@ -66,18 +111,18 @@
 .banner{
     .banner-content{
         .banner-left{
-            width: 19%;
+            width: 20%;
             height: 690px;
-            background-color: #f8f8f8b8;
+            background-color: #efefefb8;
             .banner-left--content{
                 padding: 8%;
                 .filters{
                     justify-content: space-between;
-                    border-bottom: 1px solid #d3d3d3;
+                    border-bottom: 1.5px solid #d3d3d3;
                     padding-bottom: 4%;
                     h6{
                         color: #747474;
-                        font-size: 0.7em;
+                        font-size: 0.8em;
                         font-weight: 100;
                     }
                     h5{
@@ -107,17 +152,17 @@
                     }
                     .input1{
                         @include banner-icon;
-                        top: 22.5%;
+                        top: 23%;
                     }
                     .input2{
                         @include banner-icon;
-                        top: 33.6%;
+                        top: 34%;
                     }
                     .input3{
                         @include banner-icon();
                         left: 2%;
                         font-size: 1em;
-                        top: 44.7%;
+                        top: 45.5%;
                     }
                     i:hover{
                         color: #000;
@@ -139,7 +184,7 @@
                     .checkbox{
                         justify-content: space-between;
                         flex-wrap: wrap;
-                        width: 87%;
+                        width: 90%;
                         padding-top: 7%;
                     }
                     .container{ 
@@ -190,6 +235,51 @@
                         border-width: 0 3px 3px 0;
                         transform: rotate(45deg);
                       }
+                }
+            }
+        }
+        .banner-right{
+            width: 20%;
+            height: 690px;
+            background-color: #efefefb8;
+            .banner-right--content{
+                padding:8% ;
+                .reimburse{
+                    border-bottom: 1.5px solid #d3d3d3;
+                    padding-bottom: 4%;
+                    h6{
+                        color: #747474;
+                        font-size: 0.8em;
+                        font-weight: 100;
+                    }
+                }
+            }
+        }
+        .banner-middle{
+            width: 60%;
+            box-shadow: 0px 0px 26px 3px #747474;   
+            overflow: scroll;
+            table{
+                width: 100%;
+                border-collapse: collapse;
+                tr{
+                    text-align: left;
+                    td:nth-of-type(4){
+                        color: red;
+                    }
+                }
+                td,th{
+                    padding-right: 4%;
+                    padding-left: 2%;
+                }
+                th{
+                    padding-bottom: 1%;
+                    padding-top: 1%;
+                }
+                td{
+                    border-top: 1px solid rgb(199, 199, 199);
+                    padding-top: 1%;
+                    padding-bottom: 1%;
                 }
             }
         }

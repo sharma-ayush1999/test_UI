@@ -6113,6 +6113,7 @@ readers do not read off random characters that represent icons */
   position: -webkit-sticky;
   position: sticky;
   top: 0;
+  z-index: 100;
 }
 
 .header .header-content {
@@ -6151,6 +6152,34 @@ readers do not read off random characters that represent icons */
 }
 
 @media (max-width: 800px) {
+  .banner-left {
+    height: 452px !important;
+  }
+  .banner-middle {
+    height: 450px !important;
+  }
+  .banner-right {
+    height: 173px !important;
+  }
+  .banner-right--content {
+    padding: 4% !important;
+  }
+  .banner-right--content .reimburse {
+    padding-bottom: 2% !important;
+    width: 16% !important;
+  }
+  .banner-left--content {
+    padding: 4% !important;
+  }
+  .banner-left--content .input {
+    padding-top: 3% !important;
+  }
+  .banner-left--content .filters {
+    padding-bottom: 2% !important;
+  }
+  .banner-left--content .status {
+    padding-top: 4% !important;
+  }
   .banner-content {
     display: block !important;
   }
@@ -6158,16 +6187,16 @@ readers do not read off random characters that represent icons */
     width: 100% !important;
   }
   .banner-content .input1 {
-    top: 24.7% !important;
-    left: 88% !important;
+    top: 17% !important;
+    left: 92% !important;
   }
   .banner-content .input2 {
-    top: 37% !important;
-    left: 88% !important;
+    top: 26% !important;
+    left: 92% !important;
   }
   .banner-content .input3 {
-    left: 10% !important;
-    top: 48.9% !important;
+    left: 6% !important;
+    top: 34.5% !important;
   }
   .banner-content .container {
     padding-left: 9% !important;
@@ -6179,6 +6208,23 @@ readers do not read off random characters that represent icons */
 }
 
 @media (max-width: 500px) {
+  .banner-left {
+    height: 380px !important;
+  }
+  .banner-right {
+    background-color: #dfdfdf !important;
+    height: 100px !important;
+  }
+  .banner-right .reimburse {
+    width: 43% !important;
+  }
+  .banner-right .banner-right--content {
+    padding: 5% !important;
+    padding-left: 8% !important;
+  }
+  .banner-middle {
+    height: 450px;
+  }
   .banner-content {
     display: block !important;
   }
@@ -6186,30 +6232,30 @@ readers do not read off random characters that represent icons */
     width: 100% !important;
   }
   .banner-content .input1 {
-    top: 24.3% !important;
-    left: 84% !important;
+    top: 19.6% !important;
+    left: 87% !important;
   }
   .banner-content .input2 {
-    top: 35.7% !important;
-    left: 84% !important;
+    top: 28.7% !important;
+    left: 87% !important;
   }
   .banner-content .input3 {
-    left: 10% !important;
-    top: 46.7% !important;
+    left: 7% !important;
+    top: 37.7% !important;
   }
   .banner-content .container {
-    padding-left: 14% !important;
+    padding-left: 9% !important;
   }
   .banner-content .checkbox {
-    width: 59% !important;
-    padding-top: 0% !important;
+    width: 95% !important;
+    padding-top: 2% !important;
   }
 }
 
 .banner .banner-content .banner-left {
-  width: 19%;
+  width: 20%;
   height: 690px;
-  background-color: #f8f8f8b8;
+  background-color: #efefefb8;
 }
 
 .banner .banner-content .banner-left .banner-left--content {
@@ -6220,13 +6266,13 @@ readers do not read off random characters that represent icons */
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  border-bottom: 1px solid #d3d3d3;
+  border-bottom: 1.5px solid #d3d3d3;
   padding-bottom: 4%;
 }
 
 .banner .banner-content .banner-left .banner-left--content .filters h6 {
   color: #747474;
-  font-size: 0.7em;
+  font-size: 0.8em;
   font-weight: 100;
 }
 
@@ -6267,29 +6313,29 @@ readers do not read off random characters that represent icons */
 }
 
 .banner .banner-content .banner-left .banner-left--content .input .input1 {
-  left: 16%;
+  left: 16.6%;
   color: #807575;
   font-size: 1em;
   font-size: 1.2em;
-  top: 22.5%;
+  top: 23%;
 }
 
 .banner .banner-content .banner-left .banner-left--content .input .input2 {
-  left: 16%;
+  left: 16.6%;
   color: #807575;
   font-size: 1em;
   font-size: 1.2em;
-  top: 33.6%;
+  top: 34%;
 }
 
 .banner .banner-content .banner-left .banner-left--content .input .input3 {
-  left: 16%;
+  left: 16.6%;
   color: #807575;
   font-size: 1em;
   font-size: 1.2em;
   left: 2%;
   font-size: 1em;
-  top: 44.7%;
+  top: 45.5%;
 }
 
 .banner .banner-content .banner-left .banner-left--content .input i:hover {
@@ -6321,7 +6367,7 @@ readers do not read off random characters that represent icons */
           justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  width: 87%;
+  width: 90%;
   padding-top: 7%;
 }
 
@@ -6387,6 +6433,63 @@ readers do not read off random characters that represent icons */
           transform: rotate(45deg);
 }
 
+.banner .banner-content .banner-right {
+  width: 20%;
+  height: 690px;
+  background-color: #efefefb8;
+}
+
+.banner .banner-content .banner-right .banner-right--content {
+  padding: 8%;
+}
+
+.banner .banner-content .banner-right .banner-right--content .reimburse {
+  border-bottom: 1.5px solid #d3d3d3;
+  padding-bottom: 4%;
+}
+
+.banner .banner-content .banner-right .banner-right--content .reimburse h6 {
+  color: #747474;
+  font-size: 0.8em;
+  font-weight: 100;
+}
+
+.banner .banner-content .banner-middle {
+  width: 60%;
+  -webkit-box-shadow: 0px 0px 26px 3px #747474;
+          box-shadow: 0px 0px 26px 3px #747474;
+  overflow: scroll;
+}
+
+.banner .banner-content .banner-middle table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.banner .banner-content .banner-middle table tr {
+  text-align: left;
+}
+
+.banner .banner-content .banner-middle table tr td:nth-of-type(4) {
+  color: red;
+}
+
+.banner .banner-content .banner-middle table td, .banner .banner-content .banner-middle table th {
+  padding-right: 4%;
+  padding-left: 2%;
+}
+
+.banner .banner-content .banner-middle table th {
+  padding-bottom: 1%;
+  padding-top: 1%;
+}
+
+.banner .banner-content .banner-middle table td {
+  border-top: 1px solid #c7c7c7;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+
 * {
   margin: 0px;
   padding: 0px;
@@ -6419,5 +6522,31 @@ a, li {
 
 .abs {
   position: absolute;
+}
+
+@media (max-width: 800px) {
+  .main-icon {
+    left: 89% !important;
+  }
+}
+
+@media (max-width: 500px) {
+  .main-icon {
+    left: 80% !important;
+  }
+}
+
+.main-icon {
+  position: fixed;
+  top: 90%;
+  left: 74%;
+  font-size: 4em;
+  color: red;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.main-icon:hover {
+  color: #25ff25;
 }
 /*# sourceMappingURL=project9.css.map */
