@@ -6205,8 +6205,8 @@ readers do not read off random characters that represent icons */
     padding-top: 0.3em !important;
   }
   .header .header-right button {
-    padding-bottom: 0.3em !important;
-    padding-top: 0.3em !important;
+    padding-bottom: 0.4em !important;
+    padding-top: 0.4em !important;
     padding-left: 0.7em !important;
     padding-right: 0.7em !important;
     font-size: 0.8em !important;
@@ -6263,6 +6263,22 @@ readers do not read off random characters that represent icons */
   }
   .banner-content .banner-right {
     display: none !important;
+  }
+  .banner-content .banner-middle--content {
+    width: 743px !important;
+  }
+  .banner-content .banner-middle--content th {
+    padding-right: 1em !important;
+    padding-left: 1em !important;
+  }
+  .banner-content .banner-middle--content td {
+    padding-left: 1em !important;
+  }
+  .banner-content .banner-middle--content th:nth-of-type(1) {
+    border-right: 1px solid gray;
+  }
+  .banner-content .banner-middle--content td:nth-of-type(1) {
+    border-right: 1px solid gray;
   }
   .banner-content .filters {
     padding-bottom: 2% !important;
@@ -6474,6 +6490,7 @@ readers do not read off random characters that represent icons */
 .banner .banner-content .banner-middle {
   width: 100%;
   overflow-y: auto;
+  overflow-x: auto;
 }
 
 .banner .banner-content .banner-middle .banner-middle--content {
@@ -6488,6 +6505,22 @@ readers do not read off random characters that represent icons */
   width: 100%;
   border-collapse: collapse;
   position: relative;
+}
+
+.banner .banner-content .banner-middle .banner-middle--content table th:nth-of-type(1) {
+  position: -webkit-sticky;
+  position: sticky;
+  left: 0;
+  background-color: #fff;
+  z-index: 99;
+}
+
+.banner .banner-content .banner-middle .banner-middle--content table td:nth-of-type(1) {
+  position: -webkit-sticky;
+  position: sticky;
+  left: 0;
+  background-color: #fff;
+  z-index: 98;
 }
 
 .banner .banner-content .banner-middle .banner-middle--content table th, .banner .banner-content .banner-middle .banner-middle--content table td {
@@ -6560,6 +6593,7 @@ a, li {
   .main-icon {
     width: 17% !important;
     left: 76% !important;
+    top: 87% !important;
   }
 }
 

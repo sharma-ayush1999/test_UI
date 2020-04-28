@@ -4,6 +4,22 @@
         .banner-right{
             display: none !important;
         }
+        .banner-middle--content{
+            width: 743px !important;
+            th{
+                padding-right: 1em !important;
+                padding-left: 1em !important;
+            }
+            td{
+                padding-left: 1em !important;
+            }
+            th:nth-of-type(1){
+                border-right:1px solid gray;
+            }
+            td:nth-of-type(1){
+                border-right:1px solid gray;
+            }
+        }
         .filters{
             padding-bottom: 2% !important;
             border-bottom: none !important;
@@ -41,6 +57,7 @@
         .filter-btn{
             display: flex !important;
         }
+
 }
 
 
@@ -182,6 +199,7 @@
         .banner-middle{
             width: 100%;
             overflow-y: auto;
+            overflow-x: auto;
             .banner-middle--content{
                 height: 670px;
                 padding: 1em;
@@ -189,6 +207,18 @@
                 padding-right: 0;
                 padding-top: 0;
                 table{
+                    th:nth-of-type(1){
+                        position: sticky;
+                        left: 0;
+                        background-color:#fff;
+                        z-index: 99;
+                    }
+                    td:nth-of-type(1){
+                        position: sticky;
+                        left: 0;
+                        background-color:#fff;
+                        z-index: 98;
+                    }
                     width: 100%;
                     border-collapse: collapse;
                     position: relative;
