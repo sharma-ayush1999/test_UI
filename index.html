@@ -6,7 +6,6 @@
     <title>Intership Project</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' href='css/project9.css'>
-    <script src='main.js'></script>
 </head>
 <body>
     <i class="fas fa-plus-circle main-icon"></i>
@@ -27,10 +26,14 @@
             <section class="banner-left">
                 <section class="banner-left--content">
                     <section class="filters flex">
-                    <h6>Filter Expenses</h6>
-                    <h5>Clear Filters</h5>
+                        <h6>Filter Expenses</h6>
+                        <section id="clear" class="flex">
+                            <h5>Clear Filters</h5>
+                            <i class="fas fa-bars"></i>
+                        </section>
                     </section>
-                    <section class="input-icons">
+                    <section id="clear-left">
+                        <section class="input-icons">
                         <section class="input-icon">
                             <label class="rel">From
                             <input type="none" name="date">
@@ -62,8 +65,8 @@
                             <i class="fas fa-angle-down abs"></i>
                             </label>
                         </section>
-                    </section>
-                    <section class="status flex">
+                        </section>
+                        <section class="status flex">
                         <section class="status-content">
                             <label>
                                 <input type="checkbox">
@@ -81,6 +84,7 @@
                                 <input type="checkbox">
                                 <span>Reimbursed</span>
                             </label>
+                        </section>
                         </section>
                     </section>
                 </section>
@@ -212,6 +216,6 @@
             </section>
         </section>
     </section>
-
+<script src='main.js'></script>
 </body>
 </html>

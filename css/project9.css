@@ -6098,7 +6098,6 @@ readers do not read off random characters that represent icons */
 @media (max-width: 500px) {
   .header h1 {
     font-size: 1em !important;
-    padding-top: 0.4em !important;
   }
   .header .header-right {
     padding-top: 0.3em !important;
@@ -6159,8 +6158,22 @@ readers do not read off random characters that represent icons */
   .banner-content {
     display: block !important;
   }
+  .banner-content .filters {
+    padding-bottom: 2% !important;
+    border-bottom: none !important;
+  }
+  .banner-content .filters i {
+    display: block !important;
+  }
   .banner-content .banner-left, .banner-content .banner-right, .banner-content .banner-middle {
     width: 100% !important;
+  }
+  .banner-content .banner-left--content {
+    padding-bottom: 4% !important;
+    padding-top: 4% !important;
+  }
+  .banner-content .input-icon {
+    padding-top: 0.8em !important;
   }
 }
 
@@ -6182,6 +6195,11 @@ readers do not read off random characters that represent icons */
   padding-bottom: 4%;
 }
 
+.banner .banner-content .banner-left .banner-left--content .filters i {
+  color: #8888ff;
+  display: none;
+}
+
 .banner .banner-content .banner-left .banner-left--content .filters h6 {
   color: #747474;
   font-size: 0.8em;
@@ -6192,9 +6210,10 @@ readers do not read off random characters that represent icons */
   color: #8888ff;
   font-size: 0.8em;
   cursor: pointer;
+  padding-right: 0.5em;
 }
 
-.banner .banner-content .banner-left .banner-left--content .filters h5:hover {
+.banner .banner-content .banner-left .banner-left--content .filters #clear:hover i, .banner .banner-content .banner-left .banner-left--content .filters #clear:hover h5 {
   color: #3333ff;
 }
 

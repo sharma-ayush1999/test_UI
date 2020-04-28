@@ -1,8 +1,22 @@
 @include media(phone){
     .banner-content{
         display: block !important; 
+        .filters{
+            padding-bottom: 2% !important;
+            border-bottom: none !important;
+            i{
+                display: block !important;
+            }
+        }
         .banner-left,.banner-right,.banner-middle{
             width: 100% !important;
+        }
+        .banner-left--content{
+            padding-bottom: 4% !important;
+            padding-top: 4% !important;
+        }
+        .input-icon{
+            padding-top: 0.8em !important;
         }
     }
     }    
@@ -21,6 +35,10 @@
                     justify-content: space-between;
                     border-bottom: 1.5px solid #d3d3d3;
                     padding-bottom: 4%;
+                    i{
+                        color: #8888ff;
+                        display: none;
+                    }
                     h6{
                         color: #747474;
                         font-size: 0.8em;
@@ -30,9 +48,12 @@
                         color: #8888ff;
                         font-size: 0.8em;
                         cursor: pointer;
+                        padding-right: 0.5em;
                     }
-                    h5:hover{
+                    #clear:hover{
+                        i,h5{
                         color: #3333ff;
+                        }
                     }
                 }
                 .input-icons{
