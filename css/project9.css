@@ -6257,7 +6257,7 @@ readers do not read off random characters that represent icons */
     font-size: 1em !important;
   }
   .header .header-right {
-    padding-top: 0.3em !important;
+    padding-top: 0.2em !important;
   }
   .header .header-right button {
     padding-bottom: 0.3em !important;
@@ -6651,7 +6651,7 @@ a, li {
 
 @media (max-width: 500px) {
   .main-icon {
-    width: 16% !important;
+    width: 17% !important;
     left: 76% !important;
     top: 87% !important;
   }
