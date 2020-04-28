@@ -6107,7 +6107,7 @@ readers do not read off random characters that represent icons */
   .overlay {
     width: 80% !important;
     left: 3% !important;
-    height: 150px !important;
+    height: 190px !important;
     top: 13.5em !important;
     padding-bottom: 0em !important;
   }
@@ -6260,11 +6260,11 @@ readers do not read off random characters that represent icons */
     padding-top: 0.3em !important;
   }
   .header .header-right button {
-    padding-bottom: 0.4em !important;
-    padding-top: 0.4em !important;
+    padding-bottom: 0.3em !important;
+    padding-top: 0.3em !important;
     padding-left: 0.7em !important;
     padding-right: 0.7em !important;
-    font-size: 0.8em !important;
+    font-size: 0.7em !important;
   }
 }
 
