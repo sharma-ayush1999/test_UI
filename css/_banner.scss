@@ -4,6 +4,9 @@
         .banner-right{
             display: none !important;
         }
+        .banner-middle{
+            position: fixed;
+        }
         .banner-middle--content{
             width: 743px !important;
             th{
@@ -197,7 +200,6 @@
             }
         }
         .banner-middle{
-            
             width: 100%;
             overflow-y: auto;
             overflow-x: auto;

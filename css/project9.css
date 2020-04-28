@@ -6108,7 +6108,7 @@ readers do not read off random characters that represent icons */
     width: 80% !important;
     left: 3% !important;
     height: 150px !important;
-    top: 15em !important;
+    top: 13.5em !important;
   }
   .overlay .oc2 {
     display: block !important;
@@ -6312,6 +6312,9 @@ readers do not read off random characters that represent icons */
   }
   .banner-content .banner-right {
     display: none !important;
+  }
+  .banner-content .banner-middle {
+    position: fixed;
   }
   .banner-content .banner-middle--content {
     width: 743px !important;
