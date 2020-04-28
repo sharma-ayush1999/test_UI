@@ -8,7 +8,50 @@
     <link rel='stylesheet' type='text/css' href='css/project9.css'>
 </head>
 <body>
-    <i class="fas fa-plus-circle main-icon"></i>
+    <section id="body-overlay" class="body-overlay"></section>
+    <section id="main-icon" class="main-icon">
+        <h6>+</h6>
+    </section>
+    <section id="overlay" class="overlay">
+        <section class="overlay-content">
+            <section class="flex oc1">
+                <h2>Add Expense</h2>
+                <button class="btn btn-gray">Select reciept</button>
+            </section>
+            <section class="input-icons">
+                <section class="input-icon">
+                    <label class="rel">Merchant
+                    <input type="none" name="merchant">
+                    <i class="fas fa-angle-down abs"></i>
+                    </label>
+                </section>
+                <section class="input-icon">
+                    <label class="rel">Total
+                        <input type="none" name="total">
+                        <i class="fas fa-dollar-sign abs"></i>
+                    </label>
+                </section>
+                <section class="input-icon">
+                    <label class="rel">Date
+                    <input type="none" name="date">
+                    <i class="far fa-calendar-alt abs"></i>
+                    </label>
+                </section>
+                <section class="input-icon">
+                    <label class="rel">Comment
+                    <input type="none" name="date">
+                    </label>
+                </section>
+                <section class="overlay-btn flex">
+                    <section class="flex obb">
+                        <button id="overlay-btn1" class="btn btn-blue">Save</button>
+                        <button id="overlay-btn2" class="btn btn-gray">Cancel</button>
+                    </section>
+                    <h4>Delete</h4>
+                </section>
+            </section>
+        </section>
+    </section>
     <section class="header">
         <section class="header-content flex">
             <section class="header-left">
@@ -26,9 +69,11 @@
             <section class="banner-left">
                 <section class="banner-left--content">
                     <section class="filters flex">
-                        <h6>Filter Expenses</h6>
+                        <h6 class="h5-dsk">Filter Expenses</h6>
+                        <h6 class="h5-phn">To be reimbursed</h6>
                         <section id="clear" class="flex">
-                            <h5>Clear Filters</h5>
+                            <h5 class="h5-dsk">Clear Filters</h5>
+                            <h5 class="h5-phn">Filters</h5>
                             <i class="fas fa-bars"></i>
                         </section>
                     </section>
@@ -86,6 +131,10 @@
                             </label>
                         </section>
                         </section>
+                        <section class="flex filter-btn">
+                            <h5>Clear Filter</h5>
+                            <button id="btn-hide" class="btn btn-gray">Done</button>
+                        </section>
                     </section>
                 </section>
             </section>
@@ -93,11 +142,46 @@
                 <section class="banner-middle--content">
                     <table>
                         <tr>
-                            <th class="table-content">Date</th>
-                            <th class="table-content">Merchant</th>
-                            <th class="table-content">Total</th>
-                            <th class="table-content">Status</th>
-                            <th class="table-content">Comment</th>
+                            <th class="table-content"><section class="th-content">Date<i class="fas fa-sort-down"></i></section></th>
+                            <th class="table-content"><section class="th-content">Merchant<i class="fas fa-sort-down"></i></section></th>
+                            <th class="table-content"><section class="th-content">Total<i class="fas fa-sort-down"></i></section></th>
+                            <th class="table-content"><section class="th-content">Status<i class="fas fa-sort-down"></i></section></th>
+                            <th class="table-content"><section class="th-content">Comment<i class="fas fa-sort-down"></i></section></th>
+                        </tr>
+                        <tr>
+                            <td class="table-content">04/17/2020</td>
+                            <td class="table-content">Taxi</td>
+                            <td class="table-content">$463.58</td>
+                            <td class="table-content">New</td>
+                            <td class="table-content">Expense from my business trip</td>
+                        </tr>
+                        <tr>
+                            <td class="table-content">04/17/2020</td>
+                            <td class="table-content">Taxi</td>
+                            <td class="table-content">$463.58</td>
+                            <td class="table-content">New</td>
+                            <td class="table-content">Expense from my business trip</td>
+                        </tr>
+                        <tr>
+                            <td class="table-content">04/17/2020</td>
+                            <td class="table-content">Taxi</td>
+                            <td class="table-content">$463.58</td>
+                            <td class="table-content">New</td>
+                            <td class="table-content">Expense from my business trip</td>
+                        </tr>
+                        <tr>
+                            <td class="table-content">04/17/2020</td>
+                            <td class="table-content">Taxi</td>
+                            <td class="table-content">$463.58</td>
+                            <td class="table-content">New</td>
+                            <td class="table-content">Expense from my business trip</td>
+                        </tr>
+                        <tr>
+                            <td class="table-content">04/17/2020</td>
+                            <td class="table-content">Taxi</td>
+                            <td class="table-content">$463.58</td>
+                            <td class="table-content">New</td>
+                            <td class="table-content">Expense from my business trip</td>
                         </tr>
                         <tr>
                             <td class="table-content">04/17/2020</td>

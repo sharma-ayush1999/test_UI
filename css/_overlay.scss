@@ -1,0 +1,81 @@
+@include media(phone){
+    .overlay{
+        width: 80% !important;
+        left: 5% !important;
+        height: 200px !important;
+        top: 15em !important;
+        .overlay-btn{
+            width: 122% !important;
+            .obb{
+                width: 66% !important;
+            }
+        }
+        h4{
+            margin-left: 1em !important;
+            margin-top: 0.6em !important;
+        }
+
+    }
+}
+.overlay{
+    overflow-y: auto;
+    display: none;
+    position: fixed;
+    padding: 1.5em;
+    padding-top: 2em;
+    z-index: 200;
+    width: 28%;
+    height: 490px;
+    background-color: #fff;
+    left: 33%;
+    border-radius: 5px;
+    top: 8em;
+    box-shadow: 0px 6px 25px -4px;
+    .oc1{
+        justify-content: space-between;
+        button{
+            padding: 0.7em;
+        }
+    }
+    .input-icons{
+        width: 70%;
+        .input-icon:nth-of-type(2){
+            i{
+                left: 0;
+            }
+        }
+        .input-icon:nth-of-type(4){
+            input{
+                height: 130px;
+            }
+        }
+        .overlay-btn{
+            padding-top: 4%;
+            width: 100%;
+            justify-content: space-between;
+            .obb{
+                width: 56%;
+                justify-content: space-between;
+            }
+            .btn-blue{
+                letter-spacing: 1px;
+                padding: 1.5em;
+                padding-top: 0.5em;
+                padding-bottom: 0.5em;
+                font-size: 0.9em;
+
+            }
+            .btn-gray{
+                letter-spacing: 1px;
+                padding: 0.7em;
+                padding-top: 0.5em;
+                padding-bottom: 0.5em;
+                font-size: 0.9em;   
+            }
+            h4{
+                color: rgb(255, 15, 15);
+                margin-top: 5px;
+            }
+        }
+    }
+}
