@@ -6106,19 +6106,33 @@ readers do not read off random characters that represent icons */
 @media (max-width: 500px) {
   .overlay {
     width: 80% !important;
-    left: 5% !important;
-    height: 200px !important;
+    left: 3% !important;
+    height: 150px !important;
     top: 15em !important;
   }
+  .overlay .oc2 {
+    display: block !important;
+  }
+  .overlay .or-content1 {
+    display: block !important;
+  }
+  .overlay .oc1, .overlay .input-icons {
+    width: 100% !important;
+  }
+  .overlay .overlay-right {
+    width: 88% !important;
+    height: 100px !important;
+    margin-top: 2em;
+  }
+  .overlay .oc3 {
+    padding-top: 1em;
+    width: 84% !important;
+  }
   .overlay .overlay-btn {
-    width: 122% !important;
+    width: 117% !important;
   }
   .overlay .overlay-btn .obb {
-    width: 66% !important;
-  }
-  .overlay h4 {
-    margin-left: 1em !important;
-    margin-top: 0.6em !important;
+    width: 58% !important;
   }
 }
 
@@ -6129,10 +6143,10 @@ readers do not read off random characters that represent icons */
   padding: 1.5em;
   padding-top: 2em;
   z-index: 200;
-  width: 28%;
-  height: 490px;
+  width: 47%;
+  height: 493px;
   background-color: #fff;
-  left: 33%;
+  left: 25%;
   border-radius: 5px;
   top: 8em;
   -webkit-box-shadow: 0px 6px 25px -4px;
@@ -6143,14 +6157,11 @@ readers do not read off random characters that represent icons */
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-}
-
-.overlay .oc1 button {
-  padding: 0.7em;
+  width: 50%;
 }
 
 .overlay .input-icons {
-  width: 70%;
+  width: 46%;
 }
 
 .overlay .input-icons .input-icon:nth-of-type(2) i {
@@ -6161,7 +6172,44 @@ readers do not read off random characters that represent icons */
   height: 130px;
 }
 
-.overlay .input-icons .overlay-btn {
+.overlay .oc2 {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.overlay .overlay-right {
+  border: 1px dotted #cac4c4;
+  border-radius: 5px;
+  width: 45%;
+  padding: 1em;
+  height: 360px;
+}
+
+.overlay .overlay-right .or-content1 {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 85%;
+}
+
+.overlay .overlay-right .or-content2 {
+  padding-top: 0.5em;
+}
+
+.overlay .overlay-right .or-content2 i {
+  padding: 0.3em;
+}
+
+.overlay .overlay-right button {
+  padding: 0.7em;
+}
+
+.overlay .overlay-right i, .overlay .overlay-right h5 {
+  color: #bcbaba;
+}
+
+.overlay .oc3 .overlay-btn {
   padding-top: 4%;
   width: 100%;
   -webkit-box-pack: justify;
@@ -6169,14 +6217,14 @@ readers do not read off random characters that represent icons */
           justify-content: space-between;
 }
 
-.overlay .input-icons .overlay-btn .obb {
-  width: 56%;
+.overlay .oc3 .overlay-btn .obb {
+  width: 23%;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
 
-.overlay .input-icons .overlay-btn .btn-blue {
+.overlay .oc3 .overlay-btn .btn-blue {
   letter-spacing: 1px;
   padding: 1.5em;
   padding-top: 0.5em;
@@ -6184,7 +6232,7 @@ readers do not read off random characters that represent icons */
   font-size: 0.9em;
 }
 
-.overlay .input-icons .overlay-btn .btn-gray {
+.overlay .oc3 .overlay-btn .btn-gray {
   letter-spacing: 1px;
   padding: 0.7em;
   padding-top: 0.5em;
@@ -6192,9 +6240,10 @@ readers do not read off random characters that represent icons */
   font-size: 0.9em;
 }
 
-.overlay .input-icons .overlay-btn h4 {
+.overlay .oc3 .overlay-btn h4 {
   color: #ff0f0f;
   margin-top: 5px;
+  color: pointer;
 }
 
 @media (max-width: 500px) {
@@ -6488,7 +6537,6 @@ readers do not read off random characters that represent icons */
 }
 
 .banner .banner-content .banner-middle {
-  position: fixed;
   width: 100%;
   overflow-y: auto;
   overflow-x: auto;
