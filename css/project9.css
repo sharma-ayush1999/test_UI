@@ -6100,6 +6100,15 @@ readers do not read off random characters that represent icons */
     font-size: 1em !important;
     padding-top: 0.4em !important;
   }
+  .header .header-right {
+    padding-top: 0.3em !important;
+  }
+  .header .header-right button {
+    padding: 1em;
+    padding-bottom: 0.1em;
+    padding-top: 0.1em;
+    font-size: 0.8em !important;
+  }
 }
 
 .header {
@@ -6228,7 +6237,7 @@ readers do not read off random characters that represent icons */
 }
 
 .banner .banner-content .banner-left .banner-left--content .input-icons .input2 .input i {
-  padding-top: 2.2em;
+  padding-top: 2.3em;
   left: 0;
   font-size: 1em;
 }
