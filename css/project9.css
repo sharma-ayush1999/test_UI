@@ -6275,10 +6275,10 @@ readers do not read off random characters that represent icons */
     padding-left: 1em !important;
   }
   .banner-content .banner-middle--content th:nth-of-type(1) {
-    border-right: 1px solid gray;
+    border-right: 1px solid #c7c7c7;
   }
   .banner-content .banner-middle--content td:nth-of-type(1) {
-    border-right: 1px solid gray;
+    border-right: 1px solid #c7c7c7;
   }
   .banner-content .filters {
     padding-bottom: 2% !important;
@@ -6488,9 +6488,12 @@ readers do not read off random characters that represent icons */
 }
 
 .banner .banner-content .banner-middle {
+  position: fixed;
   width: 100%;
   overflow-y: auto;
   overflow-x: auto;
+  -webkit-box-shadow: 0px -4px 55px 0px #999999;
+          box-shadow: 0px -4px 55px 0px #999999;
 }
 
 .banner .banner-content .banner-middle .banner-middle--content {
