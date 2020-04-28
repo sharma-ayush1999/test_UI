@@ -1,183 +1,20 @@
-@include media(tablet-portrait){
-    .banner-left{
-        height: 452px !important;
-    }
-    .banner-middle{
-        height: 450px !important;
-    }
-    .banner-right{
-        height: 173px !important;
-    }
-    .banner-right--content{
-        padding: 4% !important;
-        .reimburse{
-            padding-bottom: 2% !important;
-            width: 16% !important;
-        }
-    }
-    .banner-left--content{
-        padding: 4% !important;
-        .input{
-            padding-top: 3% !important;
-        }
-        .filters{
-            padding-bottom: 2% !important;
-        }
-        .status{
-            padding-top: 4% !important;
-        }
-    }
+@include media(phone){
     .banner-content{
         display: block !important; 
         .banner-left,.banner-right,.banner-middle{
             width: 100% !important;
         }
-        .input1{
-            top: 17% !important;
-            left: 92% !important;
-        }
-        .input2{
-            top: 26% !important;
-            left: 92% !important;
-        }
-        .input3{
-            left: 6% !important;
-            top: 34.5% !important;
-        }
-        .container{
-            padding-left: 9% !important;
-        }
-        .checkbox{
-            width: 51% !important;
-            padding-top: 0% !important;
-        }
     }
-}
-@include media(phone-big){
-    .banner-content{
-        display: block !important; 
-        .banner-left,.banner-right,.banner-middle{
-            width: 100% !important;
-        }
-        .input1{
-            top: 19.2% !important;
-            left: 87% !important;
-        }
-        .input2{
-            top: 30.7% !important;
-            left: 87% !important;
-        }
-        .input3{
-            left: 7.9% !important;
-            top: 42% !important;
-        }
-        .container{
-            padding-left: 9% !important;
-        }
-        .checkbox{
-            width: 95% !important;
-            padding-top: 2% !important;
-        }
-    }
-    }
-    @include media(phone-medium){
-        .header-content{
-            width: 90% !important;
-        }
-        .banner-content{
-            display: block !important; 
-            .banner-left,.banner-right,.banner-middle{
-                width: 100% !important;
-            }
-            .input1{
-                top: 17.7% !important;
-                left: 87% !important;
-            }
-            .input2{
-                top: 28% !important;
-                left: 87% !important;
-            }
-            .input3{
-                left: 7.9% !important;
-                top: 38.5% !important;
-            }
-            .container{
-                padding-left: 9% !important;
-            }
-            .checkbox{
-                width: 95% !important;
-                padding-top: 2% !important;
-            }
-        }
-    }
-@include media(phone-small){
-    .header-btn{
-        width: 97% !important;
-        font-size: 0.6em !important;
-        padding: 5% !important;
-    }
-    .banner-left{
-        height: 380px !important;
-    }
-    .banner-right{
-        background-color: #dfdfdf !important;
-        height: 100px !important;
-        .reimburse{
-            width: 43% !important;
-        }
-        .banner-right--content{
-            padding: 5% !important;
-            padding-left: 8% !important;
-        }
-    }
-    .banner-middle{
-        height: 450px;
-    }
-    .banner-content{
-        display: block !important; 
-        .banner-left,.banner-right,.banner-middle{
-            width: 100% !important;
-        }
-        .input1{
-            top: 18% !important;
-            left: 87% !important;
-        }
-        .input2{
-            top: 29.7% !important;
-            left: 87% !important;
-        }
-        .input3{
-            left: 7.9% !important;
-            top: 40.5% !important;
-        }
-        .container{
-            padding-left: 9% !important;
-        }
-        .checkbox{
-            width: 95% !important;
-            padding-top: 2% !important;
-        }
-    }
-}
+    }    
 
 
-@mixin banner-icon(){
-    left: 16.6%;
-    color: #807575;
-    font-size: 1em;
-    font-size: 1.2em;
-}
-@mixin heading4(){
-    color: #6c6b6b;
-    font-size: 0.9em;
-    padding-bottom: 2%;
-}
+
 .banner{
     .banner-content{
         .banner-left{
-            width: 20%;
-            height: 690px;
+            width: 300px;
             background-color: #efefefb8;
+            overflow: auto;
             .banner-left--content{
                 padding: 8%;
                 .filters{
@@ -192,113 +29,73 @@
                     h5{
                         color: #8888ff;
                         font-size: 0.8em;
+                        cursor: pointer;
+                    }
+                    h5:hover{
+                        color: #3333ff;
                     }
                 }
-                .input{
-                    padding-top: 9%;
-                    justify-content: space-between;
-                    h4{
-                        @include heading4();
-                    }
-                    .input-flex{
-                        width: 48%;
-                    }
-                    input{
-                        border-radius: 5px;
-                        border: none;
-                        height: 38px;
+                .input-icons{
+                    width: 100%;
+                    .input-icon{
                         width: 100%;
-                        background-color: #d5daefb3;
-                        transition: all 0.2s ease-in-out;
+                        padding-top: 2em;
+                        label{
+                            font-size: 0.9em;
+                            color: #807d7d;
+                        }
                     }
-                    input:hover{
-                        background-color:#b0b4c254;
-                    }
-                    .input1{
-                        @include banner-icon;
-                        top: 23%;
-                    }
-                    .input2{
-                        @include banner-icon;
-                        top: 34%;
-                    }
-                    .input3{
-                        @include banner-icon();
-                        left: 2%;
-                        font-size: 1em;
-                        top: 45.5%;
+                    i{
+                        padding: 0.6em;
+                        font-size: 1.2em;
+                        right: 0em;
+                        color: #848484;
+                        transition: all 0.4s ease-in-out;
                     }
                     i:hover{
                         color: #000;
                     }
-                }
+                    .input2{
+                        justify-content: space-between;
+                        width: 100%;
+                        .input{
+                            width: 47%;
+                            i{
+                                padding-top: 2em;
+                                left: 0;
+                                font-size: 1em;
+                            }
+                        }
+                    }
+                        input{
+                            border-radius: 5px;
+                            border: none;
+                            height: 38px;
+                            width: 100%;
+                            background-color: #d5daefb3;
+                            transition: all 0.2s ease-in-out;
+                        }
+                        input:hover{
+                            background-color:#b0b4c254;
+                        }
+                    }
+                
                 .status{
                     padding-top: 9%;
-                    h4{
-                        @include heading4();
+                    width: 78%;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                    .status-content{
+                        width: 50%;
+                        padding-bottom: 1em;
                     }
-                    input[type=checkbox] { 
-                        vertical-align: middle; 
-                        position: relative; 
-                        bottom: 1px;
-                        height: 17px;
-                        width: 23px;
-                        border: none;
-                    } 
-                    .checkbox{
-                        justify-content: space-between;
-                        flex-wrap: wrap;
-                        width: 90%;
-                        padding-top: 7%;
-                    }
-                    .container{ 
-                        @include heading4();
-                        padding-left: 14%;
-                        display: block; 
-                        position: relative;
-                        margin-bottom: 12px;
-                        cursor: pointer;
-                        user-select: none;
+                    label{
+                        font-size: 0.9em;
+                        display: inline-block;
                         input{
-                            position: absolute;
-                            opacity: 0;
-                            cursor: pointer;
-                            height: 0;
-                            width: 0;
-                        }
-                        .checkmark{
-                            position: absolute;
-                            top: 0;
-                            left: 0;
-                            height: 21px;
-                            width: 22px;
-                            border-radius: 4px;
-                            background-color: #d5daefb3;
+                            vertical-align: middle;
                         }
                     }
-                    .container:hover input ~ .checkmark {
-                        background-color: #ccc;
-                      }
-                      .container input:checked ~ .checkmark {
-                        background-color: #2196F3;
-                      }
-                      .checkmark:after {
-                        content: "";
-                        position: absolute;
-                        display: none;
-                      }
-                      .container input:checked ~ .checkmark:after {
-                        display: block;
-                      }
-                      .container .checkmark:after {
-                        left: 9px;
-                        top: 5px;
-                        width: 5px;
-                        height: 10px;
-                        border: solid white;
-                        border-width: 0 3px 3px 0;
-                        transform: rotate(45deg);
-                      }
                 }
             }
         }
@@ -343,7 +140,9 @@
                 td{
                     border-top: 1px solid rgb(199, 199, 199);
                     padding-top: 1%;
-                    padding-bottom: 1%;
+                    padding-bottom: 0.3%;
+                    font-size: 1em;
+                    color: #8c93accf;
                 }
             }
         }

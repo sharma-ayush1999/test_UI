@@ -1,14 +1,10 @@
 @include media(phone){
-    .header-content{
-        width: 86% !important;
-        padding: 5% !important;
-        .header-btn{
-            width: 109% !important;
-            button{
-                padding: 8% !important;
-            }
-        }
-    }
+   .header{
+       h1{
+           font-size: 1em !important;
+           padding-top: 0.4em !important;
+       }
+   } 
 }
 .header{
     background-color: #2a394b;
@@ -24,6 +20,7 @@
             h1{
                 color: #fff;
                 font-size: 1.3em;
+                padding-top: 0.2em;
             }
         }
         .header-right{
@@ -31,8 +28,8 @@
                 width: 106%;
                 justify-content: space-between;
                 button{
-                    font-size: 0.8em;
-                    padding: 6%;
+                    font-size: 1em;
+                    padding: 14%;
                     letter-spacing: 0px;
                     color: #658de7;
                     transition: all 0.6s ease-in-out;

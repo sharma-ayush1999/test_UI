@@ -1,23 +1,10 @@
 @mixin media($size) {
-    @if $size == phone-small {
+    @if $size == phone {
 
-        @media (max-width: 376px) { 
+        @media (max-width: 500px) { 
             @content; 
         }
-    }
-     @else if $size == phone-medium {
-      
-        @media (max-width: 415px){ 
-            @content; 
-        }
-    }
-        @else if $size == phone-big {
-      
-            @media (max-width: 500px){ 
-                @content; 
-            }
-
-        } 
+    } 
         @else if $size == tablet-portrait {
       
         @media (max-width: 800px){ 

@@ -18,7 +18,6 @@
             <section class="header-right">
                 <section class="flex header-btn">
                     <button class="btn btn-violet">INFO</button>
-                    <button class="btn btn-violet">LOGOUT</button>
                 </section>
             </section>
         </section>
@@ -31,33 +30,57 @@
                     <h6>Filter Expenses</h6>
                     <h5>Clear Filters</h5>
                     </section>
-                    <section class="input">
-                        <h4>From</h4>
-                        <input class="rel" type="none" name="date">
-                        <i class="far fa-calendar-alt abs input1"></i>
-                    </section>
-                    <section class="input">
-                        <h4>To</h4>
-                        <input class="rel" type="none" name="date">
-                        <i class="far fa-calendar-alt abs input2"></i>
-                    </section>
-                    <section class="input flex">
-                        <section class="input-flex">
-                            <h4>Min</h4>
-                            <input class="rel" type="none" name="date">
-                            <i class="fas fa-dollar-sign abs input3"></i>
+                    <section class="input-icons">
+                        <section class="input-icon">
+                            <label class="rel">From
+                            <input type="none" name="date">
+                            <i class="far fa-calendar-alt abs"></i>
+                            </label>
                         </section>
-                        <section class="input-flex">
-                            <h4>Max</h4>
-                            <input class="rel" type="none" name="date">
+                        <section class="input-icon">
+                            <label class="rel">To
+                                <input type="none" name="date">
+                                <i class="far fa-calendar-alt abs"></i>
+                            </label>
+                        </section>
+                        <section class="flex input-icon input2">
+                            <section class="input">
+                                <label class="rel">Min
+                                    <i class="fas fa-dollar-sign abs"></i>
+                                    <input type="none" name="min">
+                                </label>
+                            </section>
+                            <section class="input">
+                                <label class="rel">Max
+                                    <input type="none" name="max">
+                                </label>
+                            </section>
+                        </section>
+                        <section class="input-icon">
+                            <label class="rel">Merchant
+                            <input type="none" name="date">
+                            <i class="fas fa-angle-down abs"></i>
+                            </label>
                         </section>
                     </section>
-                    <section class="status">
-                        <h4>Status</h4>
-                        <section class="checkbox flex">
-                            <label class="container">New<input type="checkbox"><span class="checkmark"></span></label> 
-                            <label class="container">In Progress<input type="checkbox"><span class="checkmark"></span></label> 
-                            <label class="container">Reimbursed<input type="checkbox"><span class="checkmark"></span></label> 
+                    <section class="status flex">
+                        <section class="status-content">
+                            <label>
+                                <input type="checkbox">
+                                <span>New</span>
+                            </label>
+                        </section>
+                        <section class="status-content">
+                            <label>
+                                <input type="checkbox">
+                                <span>In Progress</span>
+                            </label>
+                        </section>
+                        <section class="status-content">
+                            <label>
+                                <input type="checkbox">
+                                <span>Reimbursed</span>
+                            </label>
                         </section>
                     </section>
                 </section>
@@ -176,7 +199,7 @@
                             <td class="table-content">$463.58</td>
                             <td class="table-content">New</td>
                             <td class="table-content">Expense from my business trip</td>
-                        </tr>
+                        </tr> 
                     </table>
                 </section>
             </section>

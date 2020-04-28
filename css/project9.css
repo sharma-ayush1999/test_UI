@@ -6095,6 +6095,13 @@ readers do not read off random characters that represent icons */
   background-color: #364b64;
 }
 
+@media (max-width: 500px) {
+  .header h1 {
+    font-size: 1em !important;
+    padding-top: 0.4em !important;
+  }
+}
+
 .header {
   background-color: #2a394b;
   position: -webkit-sticky;
@@ -6115,6 +6122,7 @@ readers do not read off random characters that represent icons */
 .header .header-content .header-left h1 {
   color: #fff;
   font-size: 1.3em;
+  padding-top: 0.2em;
 }
 
 .header .header-content .header-right .header-btn {
@@ -6125,8 +6133,8 @@ readers do not read off random characters that represent icons */
 }
 
 .header .header-content .header-right .header-btn button {
-  font-size: 0.8em;
-  padding: 6%;
+  font-size: 1em;
+  padding: 14%;
   letter-spacing: 0px;
   color: #658de7;
   -webkit-transition: all 0.6s ease-in-out;
@@ -6138,62 +6146,6 @@ readers do not read off random characters that represent icons */
   background-color: #4b5d72;
 }
 
-@media (max-width: 800px) {
-  .banner-left {
-    height: 452px !important;
-  }
-  .banner-middle {
-    height: 450px !important;
-  }
-  .banner-right {
-    height: 173px !important;
-  }
-  .banner-right--content {
-    padding: 4% !important;
-  }
-  .banner-right--content .reimburse {
-    padding-bottom: 2% !important;
-    width: 16% !important;
-  }
-  .banner-left--content {
-    padding: 4% !important;
-  }
-  .banner-left--content .input {
-    padding-top: 3% !important;
-  }
-  .banner-left--content .filters {
-    padding-bottom: 2% !important;
-  }
-  .banner-left--content .status {
-    padding-top: 4% !important;
-  }
-  .banner-content {
-    display: block !important;
-  }
-  .banner-content .banner-left, .banner-content .banner-right, .banner-content .banner-middle {
-    width: 100% !important;
-  }
-  .banner-content .input1 {
-    top: 17% !important;
-    left: 92% !important;
-  }
-  .banner-content .input2 {
-    top: 26% !important;
-    left: 92% !important;
-  }
-  .banner-content .input3 {
-    left: 6% !important;
-    top: 34.5% !important;
-  }
-  .banner-content .container {
-    padding-left: 9% !important;
-  }
-  .banner-content .checkbox {
-    width: 51% !important;
-    padding-top: 0% !important;
-  }
-}
-
 @media (max-width: 500px) {
   .banner-content {
     display: block !important;
@@ -6201,112 +6153,12 @@ readers do not read off random characters that represent icons */
   .banner-content .banner-left, .banner-content .banner-right, .banner-content .banner-middle {
     width: 100% !important;
   }
-  .banner-content .input1 {
-    top: 19.2% !important;
-    left: 87% !important;
-  }
-  .banner-content .input2 {
-    top: 30.7% !important;
-    left: 87% !important;
-  }
-  .banner-content .input3 {
-    left: 7.9% !important;
-    top: 42% !important;
-  }
-  .banner-content .container {
-    padding-left: 9% !important;
-  }
-  .banner-content .checkbox {
-    width: 95% !important;
-    padding-top: 2% !important;
-  }
-}
-
-@media (max-width: 415px) {
-  .header-content {
-    width: 90% !important;
-  }
-  .banner-content {
-    display: block !important;
-  }
-  .banner-content .banner-left, .banner-content .banner-right, .banner-content .banner-middle {
-    width: 100% !important;
-  }
-  .banner-content .input1 {
-    top: 17.7% !important;
-    left: 87% !important;
-  }
-  .banner-content .input2 {
-    top: 28% !important;
-    left: 87% !important;
-  }
-  .banner-content .input3 {
-    left: 7.9% !important;
-    top: 38.5% !important;
-  }
-  .banner-content .container {
-    padding-left: 9% !important;
-  }
-  .banner-content .checkbox {
-    width: 95% !important;
-    padding-top: 2% !important;
-  }
-}
-
-@media (max-width: 376px) {
-  .header-btn {
-    width: 97% !important;
-    font-size: 0.6em !important;
-    padding: 5% !important;
-  }
-  .banner-left {
-    height: 380px !important;
-  }
-  .banner-right {
-    background-color: #dfdfdf !important;
-    height: 100px !important;
-  }
-  .banner-right .reimburse {
-    width: 43% !important;
-  }
-  .banner-right .banner-right--content {
-    padding: 5% !important;
-    padding-left: 8% !important;
-  }
-  .banner-middle {
-    height: 450px;
-  }
-  .banner-content {
-    display: block !important;
-  }
-  .banner-content .banner-left, .banner-content .banner-right, .banner-content .banner-middle {
-    width: 100% !important;
-  }
-  .banner-content .input1 {
-    top: 18% !important;
-    left: 87% !important;
-  }
-  .banner-content .input2 {
-    top: 29.7% !important;
-    left: 87% !important;
-  }
-  .banner-content .input3 {
-    left: 7.9% !important;
-    top: 40.5% !important;
-  }
-  .banner-content .container {
-    padding-left: 9% !important;
-  }
-  .banner-content .checkbox {
-    width: 95% !important;
-    padding-top: 2% !important;
-  }
 }
 
 .banner .banner-content .banner-left {
-  width: 20%;
-  height: 690px;
+  width: 300px;
   background-color: #efefefb8;
+  overflow: auto;
 }
 
 .banner .banner-content .banner-left .banner-left--content {
@@ -6330,26 +6182,58 @@ readers do not read off random characters that represent icons */
 .banner .banner-content .banner-left .banner-left--content .filters h5 {
   color: #8888ff;
   font-size: 0.8em;
+  cursor: pointer;
 }
 
-.banner .banner-content .banner-left .banner-left--content .input {
-  padding-top: 9%;
+.banner .banner-content .banner-left .banner-left--content .filters h5:hover {
+  color: #3333ff;
+}
+
+.banner .banner-content .banner-left .banner-left--content .input-icons {
+  width: 100%;
+}
+
+.banner .banner-content .banner-left .banner-left--content .input-icons .input-icon {
+  width: 100%;
+  padding-top: 2em;
+}
+
+.banner .banner-content .banner-left .banner-left--content .input-icons .input-icon label {
+  font-size: 0.9em;
+  color: #807d7d;
+}
+
+.banner .banner-content .banner-left .banner-left--content .input-icons i {
+  padding: 0.6em;
+  font-size: 1.2em;
+  right: 0em;
+  color: #848484;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.banner .banner-content .banner-left .banner-left--content .input-icons i:hover {
+  color: #000;
+}
+
+.banner .banner-content .banner-left .banner-left--content .input-icons .input2 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  width: 100%;
 }
 
-.banner .banner-content .banner-left .banner-left--content .input h4 {
-  color: #6c6b6b;
-  font-size: 0.9em;
-  padding-bottom: 2%;
+.banner .banner-content .banner-left .banner-left--content .input-icons .input2 .input {
+  width: 47%;
 }
 
-.banner .banner-content .banner-left .banner-left--content .input .input-flex {
-  width: 48%;
+.banner .banner-content .banner-left .banner-left--content .input-icons .input2 .input i {
+  padding-top: 2em;
+  left: 0;
+  font-size: 1em;
 }
 
-.banner .banner-content .banner-left .banner-left--content .input input {
+.banner .banner-content .banner-left .banner-left--content .input-icons input {
   border-radius: 5px;
   border: none;
   height: 38px;
@@ -6359,129 +6243,32 @@ readers do not read off random characters that represent icons */
   transition: all 0.2s ease-in-out;
 }
 
-.banner .banner-content .banner-left .banner-left--content .input input:hover {
+.banner .banner-content .banner-left .banner-left--content .input-icons input:hover {
   background-color: #b0b4c254;
-}
-
-.banner .banner-content .banner-left .banner-left--content .input .input1 {
-  left: 16.6%;
-  color: #807575;
-  font-size: 1em;
-  font-size: 1.2em;
-  top: 23%;
-}
-
-.banner .banner-content .banner-left .banner-left--content .input .input2 {
-  left: 16.6%;
-  color: #807575;
-  font-size: 1em;
-  font-size: 1.2em;
-  top: 34%;
-}
-
-.banner .banner-content .banner-left .banner-left--content .input .input3 {
-  left: 16.6%;
-  color: #807575;
-  font-size: 1em;
-  font-size: 1.2em;
-  left: 2%;
-  font-size: 1em;
-  top: 45.5%;
-}
-
-.banner .banner-content .banner-left .banner-left--content .input i:hover {
-  color: #000;
 }
 
 .banner .banner-content .banner-left .banner-left--content .status {
   padding-top: 9%;
-}
-
-.banner .banner-content .banner-left .banner-left--content .status h4 {
-  color: #6c6b6b;
-  font-size: 0.9em;
-  padding-bottom: 2%;
-}
-
-.banner .banner-content .banner-left .banner-left--content .status input[type=checkbox] {
-  vertical-align: middle;
-  position: relative;
-  bottom: 1px;
-  height: 17px;
-  width: 23px;
-  border: none;
-}
-
-.banner .banner-content .banner-left .banner-left--content .status .checkbox {
+  width: 78%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  width: 90%;
-  padding-top: 7%;
 }
 
-.banner .banner-content .banner-left .banner-left--content .status .container {
-  color: #6c6b6b;
+.banner .banner-content .banner-left .banner-left--content .status .status-content {
+  width: 50%;
+  padding-bottom: 1em;
+}
+
+.banner .banner-content .banner-left .banner-left--content .status label {
   font-size: 0.9em;
-  padding-bottom: 2%;
-  padding-left: 14%;
-  display: block;
-  position: relative;
-  margin-bottom: 12px;
-  cursor: pointer;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
+  display: inline-block;
 }
 
-.banner .banner-content .banner-left .banner-left--content .status .container input {
-  position: absolute;
-  opacity: 0;
-  cursor: pointer;
-  height: 0;
-  width: 0;
-}
-
-.banner .banner-content .banner-left .banner-left--content .status .container .checkmark {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 21px;
-  width: 22px;
-  border-radius: 4px;
-  background-color: #d5daefb3;
-}
-
-.banner .banner-content .banner-left .banner-left--content .status .container:hover input ~ .checkmark {
-  background-color: #ccc;
-}
-
-.banner .banner-content .banner-left .banner-left--content .status .container input:checked ~ .checkmark {
-  background-color: #2196F3;
-}
-
-.banner .banner-content .banner-left .banner-left--content .status .checkmark:after {
-  content: "";
-  position: absolute;
-  display: none;
-}
-
-.banner .banner-content .banner-left .banner-left--content .status .container input:checked ~ .checkmark:after {
-  display: block;
-}
-
-.banner .banner-content .banner-left .banner-left--content .status .container .checkmark:after {
-  left: 9px;
-  top: 5px;
-  width: 5px;
-  height: 10px;
-  border: solid white;
-  border-width: 0 3px 3px 0;
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
+.banner .banner-content .banner-left .banner-left--content .status label input {
+  vertical-align: middle;
 }
 
 .banner .banner-content .banner-right {
@@ -6538,7 +6325,9 @@ readers do not read off random characters that represent icons */
 .banner .banner-content .banner-middle table td {
   border-top: 1px solid #c7c7c7;
   padding-top: 1%;
-  padding-bottom: 1%;
+  padding-bottom: 0.3%;
+  font-size: 1em;
+  color: #8c93accf;
 }
 
 * {
@@ -6578,26 +6367,6 @@ a, li {
 @media (max-width: 800px) {
   .main-icon {
     left: 89% !important;
-  }
-}
-
-@media (max-width: 500px) {
-  .main-icon {
-    left: 80% !important;
-  }
-}
-
-@media (max-width: 415px) {
-  .main-icon {
-    left: 83% !important;
-    font-size: 3em !important;
-  }
-}
-
-@media (max-width: 376px) {
-  .main-icon {
-    left: 83% !important;
-    font-size: 3em !important;
   }
 }
 
