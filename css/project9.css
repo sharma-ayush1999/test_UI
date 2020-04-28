@@ -6108,7 +6108,7 @@ readers do not read off random characters that represent icons */
     width: 80% !important;
     left: 3% !important;
     height: 220px !important;
-    top: 12em !important;
+    top: 10em !important;
     padding-bottom: 0em !important;
   }
   .overlay .oc2 {
@@ -6651,7 +6651,7 @@ a, li {
 
 @media (max-width: 500px) {
   .main-icon {
-    width: 16.5% !important;
+    width: 17% !important;
     left: 76% !important;
     top: 87% !important;
   }
